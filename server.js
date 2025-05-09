@@ -37,7 +37,7 @@ app.use(cors());
 app.use(express.json());
 
 // MongoDB Connection
-const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/chat-gpt-app';
+const MONGODB_URI = process.env.MONGODB_URI || 'mongodb+srv://pedidos:0YxqfUvLp77s5h6n@cluster0.59hqg.mongodb.net/?';
 
 mongoose.connect(MONGODB_URI)
   .then(() => console.log('✅ MongoDB conectado'))
